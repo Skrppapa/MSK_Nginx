@@ -2,16 +2,10 @@
 
 ```
 sudo apt update
-sudo apt install openssh-server
-sudo systemctl status shh
-sudo systemctl start ssh
-sudo systemctl enable ssh
-```
-```
-sudo apt update
-sudo apt install isc-dhcp-client –y
+sudo apt install isc-dhcp-client -y
 sudo ip link set enp0s8 up
 sudo dhclient enp0s8
+
 ```
 ```
 ip a
@@ -21,7 +15,6 @@ sudo ufw allow 80/tcp
 ```
 ```
 sudo apt install -y nginx
-sudo apt-get install -y lynx (не особо нужен)
 ```
 
 **Шаг 1 (устанавливам .NET 6)**
@@ -37,7 +30,6 @@ dotnet --version
 **Шаг 2 (Создаем нужные директории)**
 ```
 sudo mkdir -p /var/www/app
-sudo chown dmitry:dmitry /var/www/app (необязательно)
 sudo chmod 755 /var/www/app
 mkdir -p ~/app
 ```
@@ -71,7 +63,7 @@ Restart=always
 RestartSec=10
 KillSignal=SIGINT
 SyslogIdentifier=dotnet-api
-User=dmitry
+User=konst
 Environment=ASPNETCORE_URLS=http://0.0.0.0:5000
 Environment=ASPNETCORE_ENVIRONMENT=Production
 Environment=DOTNET_PRINT_TELEMETRY_MESSAGE=false
@@ -94,7 +86,7 @@ sudo cp /etc/nginx/sites-available/default /etc/nginx/sites-available/mysimpleap
 ```
 sudo nano /etc/nginx/sites-available/mysimpleapi
 ```
-убираем там default server возле адреса порта и дополняем в location:
+убираем там default server возле адреса порта (в обоих строках) и дополняем в location:
 ```
 location / {
     proxy_pass         http://localhost:5000;
@@ -108,7 +100,7 @@ location / {
 ```
 sudo nano /etc/nginx/sites-available/default
 ```
-внутри меняем порт с 80 на 81 чтобы не было конфликта портов
+внутри меняем порт с 80 на 81 (в обоих строках) чтобы не было конфликта портов
 ```
 sudo ln -s /etc/nginx/sites-available/mysimpleapi /etc/nginx/sites-enabled/
 sudo nginx -t
