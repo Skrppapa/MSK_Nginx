@@ -39,7 +39,7 @@ mkdir -p ~/app
 ```
 cd ~/app
 git clone https://github.com/Skrppapa/MSK_Nginx.git
-cd MySimpleApi
+cd MSK_Nginx
 ```
 
 **Шаг 4 (Сборка и публикация)**
