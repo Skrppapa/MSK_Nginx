@@ -38,7 +38,7 @@ mkdir -p ~/app
 **Шаг 3 (Скачиваем приложение)**
 ```
 cd ~/app
-git clone https://github.com/Changergon/MySimpleApi.git
+git clone https://github.com/Skrppapa/MSK_Nginx.git
 cd MySimpleApi
 ```
 
