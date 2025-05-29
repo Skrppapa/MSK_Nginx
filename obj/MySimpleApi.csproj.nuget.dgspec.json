@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Дмитрий\\Desktop\\ProjectNET\\MySimpleApi\\MySimpleApi.csproj": {}
+    "C:\\Users\\K MSK\\Desktop\\MSK_Nginx\\MySimpleApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Дмитрий\\Desktop\\ProjectNET\\MySimpleApi\\MySimpleApi.csproj": {
+    "C:\\Users\\K MSK\\Desktop\\MSK_Nginx\\MySimpleApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Дмитрий\\Desktop\\ProjectNET\\MySimpleApi\\MySimpleApi.csproj",
+        "projectUniqueName": "C:\\Users\\K MSK\\Desktop\\MSK_Nginx\\MySimpleApi.csproj",
         "projectName": "MySimpleApi",
-        "projectPath": "C:\\Users\\Дмитрий\\Desktop\\ProjectNET\\MySimpleApi\\MySimpleApi.csproj",
-        "packagesPath": "C:\\Users\\Дмитрий\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Дмитрий\\Desktop\\ProjectNET\\MySimpleApi\\obj\\",
+        "projectPath": "C:\\Users\\K MSK\\Desktop\\MSK_Nginx\\MySimpleApi.csproj",
+        "packagesPath": "C:\\Users\\K MSK\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\K MSK\\Desktop\\MSK_Nginx\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Дмитрий\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config"
+          "C:\\Users\\K MSK\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -36,6 +32,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -58,6 +59,24 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.36, 6.0.36]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[6.0.36, 6.0.36]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.36, 6.0.36]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.36, 6.0.36]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -66,7 +85,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.428\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.410\\RuntimeIdentifierGraph.json"
         }
       }
     }
